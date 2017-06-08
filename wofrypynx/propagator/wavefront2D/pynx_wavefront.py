@@ -14,7 +14,7 @@ from pynx.wavefront.cl_operator import FromPU, FreeFromPU, ToPU, PropagateNearFi
 
 from wofry.propagator.wavefront2D.generic_wavefront import GenericWavefront2D
 from wofry.propagator.decorators import WavefrontDecorator
-
+from wofry.propagator.wavefront import WavefrontDimension
 
 class PYNXWavefront(Wavefront, WavefrontDecorator):
 
@@ -56,6 +56,10 @@ class PYNXWavefront(Wavefront, WavefrontDecorator):
 
         return wavefront
 
+    def get_dimension(self):
+        return WavefrontDimension.TWO
+
+# todo: move outside
 #
 # TESTS
 #

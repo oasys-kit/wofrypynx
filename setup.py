@@ -15,7 +15,7 @@ VERSION = '1.0.0'
 ISRELEASED = False
 
 DESCRIPTION = 'WOFRY (Wave Optics FRamework in pYthon) for PYNX'
-README_FILE = os.path.join(os.path.dirname(__file__), 'README.txt')
+README_FILE = os.path.join(os.path.dirname(__file__), 'README.md')
 LONG_DESCRIPTION = open(README_FILE).read()
 AUTHOR = 'Manuel Sanchez del Rio, Luca Rebuffi'
 AUTHOR_EMAIL = 'srio@esrf.eu'
